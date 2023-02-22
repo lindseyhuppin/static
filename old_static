@@ -1,0 +1,15 @@
+int squareSize = 5;
+void setup() {
+  size(1000, 1000);
+  noStroke();
+}
+void draw() {
+  //allows for change in color
+  for (int i=0; i<width; i+=squareSize) {
+    for (int j=0; j<height; j+=squareSize) {
+      //black and white
+      fill(random(0, 255));
+      rect(i, j, squareSize, squareSize);
+    }
+  }
+}
